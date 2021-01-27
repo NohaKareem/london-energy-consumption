@@ -2,7 +2,7 @@ name: Deploy London Energy Consumption project
 on: 
   push: 
     branches:
-      #- "ci-cd"
+      - "ci-cd"
       - main
 jobs: 
   deploy: 
