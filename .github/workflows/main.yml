@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Use Node Version ${{ matrix.node-version }}
-        uses: actions/setup-node@vq
+        uses: actions/setup-node@v1
         with: 
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
@@ -23,3 +23,4 @@ jobs:
         with: 
           GENERATE_SOURCEMAP: false
           REACT_APP_MAPBOX_API: ${{ secrets.MAPBOX_API }}
+      
