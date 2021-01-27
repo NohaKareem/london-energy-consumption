@@ -30,4 +30,3 @@ jobs:
         with: 
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build
-          "homepage": "/London_Transit",
