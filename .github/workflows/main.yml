@@ -3,8 +3,8 @@ on:
   push: 
     branches:
       # - "ci-cd"
-      # - main
-      - master
+      - main
+      # - master
 jobs: 
   deploy: 
     runs-on: ubuntu-latest
