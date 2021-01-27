@@ -23,4 +23,11 @@ jobs:
         with: 
           GENERATE_SOURCEMAP: false
           REACT_APP_MAPBOX_API: ${{ secrets.MAPBOX_API }}
-      
+      - name: Build the App
+        run: npm run build
+      - name: Deploy to GitHub pages
+        uses: peaceiris/actions-gh-pages@v3
+        with: 
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./build
+          "homepage": "/London_Transit",
